@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --active: coral;
+}
+
+.linkBtn {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: url('./images/bgimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass {
+    height: 90vh;
+    width: 80vw;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(1rem);
+    border-radius: 30px;
+    display: flex;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255,255,255,0.2);
+    border-radius: 30px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+
+nav ul li{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 10px 0;
+    transition: all 0.2s ease;
+}
+
+.active {
+    background-color: rgba(255,255,255,0.5);
+    color: var(--active)
+}
+
+.content {
+    flex: 10;
+}
+
+.dashboard {
+    padding: 30px;
+    display: flex;
+}
+
+.dashboard .info {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard main {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard main .cardContainer {
+    width: 95%;
+}
+
+.sectionHeader {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.cardContainer {
+    min-height: 30vh;
+    width: 90%;
+    background: rgba(255,255,255,0.3);
+    padding: 10px 30px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.cardProfile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileName {
+    font-weight: normal;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.detailsHeader {
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+
+.cardContainer .details {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button.primary {
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.yourDoctors {
+    flex: 1;
+}
+
+.healthCurve {
+    flex: 3;
+}
+
+.healthCurve .cardContainer {
+    min-height: 93%;
+}
+
+/* :HOVER ANIMATIONS */
+nav ul li:hover{
+    background-color: rgba(255,255,255,0.5);
+    color: var(--active);
+    cursor: pointer;
+}
+
+.primary:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
