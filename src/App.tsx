@@ -5,6 +5,8 @@ import RecordsIcon from '@material-ui/icons/AssignmentInd';
 import AppointmentsIcon from '@material-ui/icons/LocalHospital';
 import {Switch, Route, Link} from 'react-router-dom';
 import Dashboard from './components/dashboard';
+import Appointements from './components/appointments';
+import Appointments from './components/appointments';
 
 function App() {
   return (
@@ -19,7 +21,8 @@ function App() {
         </nav>
         <div className="content">
           <Switch>
-            <Route path="/dashboard" component={Dashboard}/>
+            <Route path="/dashboard" exact component={Dashboard}/>
+            <Route path="/appointments" exact component={Appointments}/>
           </Switch>
         </div>
       </div>

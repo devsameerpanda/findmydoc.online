@@ -1,6 +1,8 @@
 import React from 'react';
 import Person from '@material-ui/icons/Person';
 
+// import './dashboard.css';
+
 const Dashboard:React.FC = () => {
     return(
         <div className="dashboard">

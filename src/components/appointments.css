@@ -1,0 +1,49 @@
+.cardContainer {
+    min-height: 30vh;
+    width: 90%;
+    background: rgba(255,255,255,0.3);
+    padding: 10px 30px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.appointments {
+    padding: 30px;
+    display: flex;
+}
+
+.pastVisits {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.pastVisits h1{
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.appointmentDetails {
+    flex: 10;
+}
+
+.doctorName {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.appointmentDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardContainer .doctorDetails {
+    margin: 10px 0;
+}
+
+.appointmentDetails .cardContainer {
+    min-height: 80vh;
+    width: 100%;
+    overflow: auto;
+}

@@ -78,97 +78,9 @@ nav ul li{
     flex: 10;
 }
 
-.dashboard {
-    padding: 30px;
-    display: flex;
-}
-
-.dashboard .info {
-    flex: 5;
-    display: flex;
-    flex-direction: column;
-}
-
-.dashboard main {
-    flex: 10;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.dashboard main .cardContainer {
-    width: 95%;
-}
-
-.sectionHeader {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    font-size: 2rem;
-}
-
-.cardContainer {
-    min-height: 30vh;
-    width: 90%;
-    background: rgba(255,255,255,0.3);
-    padding: 10px 30px;
-    margin: 10px 0;
-    border-radius: 20px;
-}
-
-.cardProfile {
-    display: flex;
-    justify-content: space-between;
-}
-
-.profileName {
-    font-weight: normal;
-}
-
-.flexContainer {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.detailsHeader {
-    font-size: 0.9rem;
-    font-weight: lighter;
-}
-
-.cardContainer .details {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-button.primary {
-    padding: 10px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: none;
-    border: none;
-    transition: all 0.2s ease;
-}
-
-.yourDoctors {
-    flex: 1;
-}
-
-.healthCurve {
-    flex: 3;
-}
-
-.healthCurve .cardContainer {
-    min-height: 93%;
-}
-
 /* :HOVER ANIMATIONS */
 nav ul li:hover{
     background-color: rgba(255,255,255,0.5);
     color: var(--active);
-    cursor: pointer;
-}
-
-.primary:hover{
-    transform: scale(1.05);
     cursor: pointer;
 }
